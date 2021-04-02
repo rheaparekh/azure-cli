@@ -29,6 +29,7 @@ from knack.util import CLIError
 
 from azure.cli.command_modules.vm._validators import _get_resource_group_from_vault_name
 from azure.cli.core.commands.validators import validate_file_or_dict
+from azure.cli.core.azclierror import ValidationError
 
 from azure.cli.core.commands import LongRunningOperation, DeploymentOutputLongRunningOperation
 from azure.cli.core.commands.client_factory import get_mgmt_service_client, get_data_service_client
@@ -3725,6 +3726,7 @@ def set_disk_access(cmd, client, parameters, resource_group_name, disk_access_na
 
 # endregion
 
+
 # region install patches
 def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, reboot_setting, classifications_to_include=None, kb_numbers_to_include=None, kb_numbers_to_exclude=None,
                        exclude_kbs_requiring_reboot=None, package_name_masks_to_include=None, package_name_masks_to_exclude=None, no_wait=False):
@@ -3740,22 +3742,15 @@ def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, rebo
             for cti in classifications_to_include:
                 if cti not in [x.value for x in VMGuestPatchClassificationWindows]:
                     raise ValidationError('classifications_to_include value for Windows VM should be Critical/Security/UpdateRollUp/FeaturePack/ServicePack/Definition/Tools/Updates')
-        windows_parameters = WindowsParameters(classifications_to_include=classifications_to_include,
-                                               kb_numbers_to_inclunde=kb_numbers_to_include,
-                                               kb_numbers_to_exclude=kb_numbers_to_exclude,
-                                               exclude_kbs_requirig_reboot=exclude_kbs_requiring_reboot)
-        install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting,
-                                                                       windows_parameters=windows_parameters)
+        windows_parameters = WindowsParameters(classifications_to_include=classifications_to_include, kb_numbers_to_inclunde=kb_numbers_to_include, kb_numbers_to_exclude=kb_numbers_to_exclude, exclude_kbs_requirig_reboot=exclude_kbs_requiring_reboot)
+        install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, windows_parameters=windows_parameters)
     elif osType == 'linux':
         if classifications_to_include:
             for cti in classifications_to_include:
                 if cti not in [x.value for x in VMGuestPatchClassificationLinux]:
                     raise ValidationError('classifications_to_include value for Windows VM should be Critical/Security/Other')
-        linux_parameters = LinuxParameters(classifications_to_include=classifications_to_include,
-                                           package_name_masks_to_include=package_name_masks_to_include,
-                                           package_name_masks_to_exclude=package_name_masks_to_exclude)
-        install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting,
-                                                                       linux_parameters=linux_parameters)
+        linux_parameters = LinuxParameters(classifications_to_include=classifications_to_include, package_name_masks_to_include=package_name_masks_to_include, package_name_masks_to_exclude=package_name_masks_to_exclude)
+        install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, linux_parameters=linux_parameters)
     else:
         raise CLIError('osType {} of the vm is not allowed'.format(osType))
 
