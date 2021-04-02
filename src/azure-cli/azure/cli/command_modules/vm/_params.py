@@ -40,6 +40,7 @@ def load_arguments(self, _):
     HyperVGenerationTypes, HyperVGeneration = self.get_models('HyperVGenerationTypes', 'HyperVGeneration')
     DedicatedHostLicenseTypes = self.get_models('DedicatedHostLicenseTypes')
     OrchestrationServiceNames, OrchestrationServiceStateAction = self.get_models('OrchestrationServiceNames', 'OrchestrationServiceStateAction', operation_group='virtual_machine_scale_sets')
+    RebootSetting = self.get_models('VMGuestPatchRebootSetting')
 
     # REUSABLE ARGUMENT DEFINITIONS
     name_arg_type = CLIArgumentType(options_list=['--name', '-n'], metavar='NAME')
@@ -388,15 +389,14 @@ def load_arguments(self, _):
     with self.argument_context('vm install-patches') as c:
         c.argument('vm_name', arg_type=existing_vm_name)
         c.argument('maximum_duration', type=str, help='Specifies the maximum amount of time that the operation will run. It must be an ISO 8601-compliant duration string such as PT4H (4 hours)')
-        c.argument('reboot_setting', type=str, help='Defines when it is acceptable to reboot a VM during a software update operation. Possible values are: IfRequired/ Never/Always')
-        c.argument('classifications_to_include', nargs='+', help='Space-separated list of classifications to include. Possible values for Windows VM: Critical/Security/UpdateRollUp/FeaturePack/'
-                                                                 'ServicePack/Definition/Tools/Updates. '
-                                                                 'Possible values for Linux VM: Critical/Security/Security')
-        c.argument('kb_numbers_to_include', nargs='+', help='Space-separated list of KBs to include in the patch operation. Applicable to Windows VM only')
-        c.argument('kb_numbers_to_exclude', nargs='+', help='Space-separated list of KBs to exclude in the patch operation. Applicable to Windows VM only')
-        c.argument('exclude_kbs_requiring_reboot', arg_type=get_three_state_flag(), help="Filters out KBs that don't have a reboot behavior of 'NeverReboots' when this is set. Applicable to Windows VM only")
-        c.argument('package_name_masks_to_include', nargs='+', help='Space-separated list of packages to include in the patch operation. Format: packageName_packageVersion. Applicable to Linux VM only')
-        c.argument('package_name_masks_to_exclude', nargs='+', help='Space-separated list of packages to exclude in the patch operation. Format: packageName_packageVersion. Applicable to Linux VM only')
+        c.argument('reboot_setting', arg_type=get_enum_type(RebootSetting), help='Defines when it is acceptable to reboot a VM during a software update operation. Possible values are: IfRequired/ Never/Always')
+        c.argument('classifications_to_include', options_list=['--cfs-include'], nargs='+', help='Space-separated list of classifications to include. Possible values for Windows VM: Critical/Security/UpdateRollUp/FeaturePack/' +
+                                                                 'ServicePack/Definition/Tools/Updates. Possible values for Linux VM: Critical/Security/Security')
+        c.argument('kb_numbers_to_include', nargs='+', options_list=['--kbn-include'], help='Space-separated list of KBs to include in the patch operation. Applicable to Windows VM only')
+        c.argument('kb_numbers_to_exclude', nargs='+', options_list=['--kbn-exclude'], help='Space-separated list of KBs to exclude in the patch operation. Applicable to Windows VM only')
+        c.argument('exclude_kbs_requiring_reboot', options_list=['--reboot'], arg_type=get_three_state_flag(), help="Filters out KBs that don't have a reboot behavior of 'NeverReboots' when this is set. Applicable to Windows VM only")
+        c.argument('package_name_masks_to_include', options_list=['--pnm_include'], nargs='+', help='Space-separated list of packages to include in the patch operation. Format: packageName_packageVersion. Applicable to Linux VM only')
+        c.argument('package_name_masks_to_exclude', options_list=['--pnm_exclude'], nargs='+', help='Space-separated list of packages to exclude in the patch operation. Format: packageName_packageVersion. Applicable to Linux VM only')
 
     with self.argument_context('vm disk') as c:
         c.argument('vm_name', options_list=['--vm-name'], id_part=None, completer=get_resource_name_completion_list('Microsoft.Compute/virtualMachines'))

@@ -5077,8 +5077,8 @@ class VMInstallPatchesScenarioTest(ScenarioTest):
         # Create new one
         self.cmd(
             'vm create -g {rg} -n vm --image Win2019Datacenter --enable-hotpatching true --admin-username azureuser --admin-password testPassword0 --nsg-rule NONE')
-        self.cmd('vm install-patches -g {rg} -n vm --maximum-duration PT4H --reboot-setting IfRequired '
-                 '--classifications-to-include Critical Security --exclude-kbs-requiring-reboot true', checks=[
+        self.cmd('vm install-patches -g zxf-test -n vm --maximum-duration PT4H --reboot-setting IfRequired '
+                 '--cfs-include Critical Security --reboot true', checks=[
             self.check('status', 'Succeeded')
         ])
 
