@@ -824,7 +824,7 @@ helps['vm install-patches'] = """
 type: command
 short-summary: Install patches on a VM.
 examples:
-  - name: Install patches on a VM.
+  - name: Install patches on a VM, allowing the maximum amount of time to be 4 hours, and the VM will reboot if required during the software update operation.
     text: az vm install-patches -g MyResourceGroup -n MyVm --maximum-duration PT4H --reboot-setting IfRequired --cfs-include Critical Security --reboot true
 """
 

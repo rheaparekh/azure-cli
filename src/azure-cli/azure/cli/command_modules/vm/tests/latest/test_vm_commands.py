@@ -5081,6 +5081,11 @@ class VMInstallPatchesScenarioTest(ScenarioTest):
             self.check('status', 'Succeeded')
         ])
 
+        self.cmd('vm create -g {rg} -n vm2 --image UbuntuLTS --enable-hotpatching true --admin-username azureuser --admin-password testPassword0 --nsg-rule NONE')
+        self.cmd('vm install-patches -g {rg} -n vm2 --maximum-duration PT4H --reboot-setting IfRequired --cfs-include Critical Security --reboot true', checks=[
+            self.check('status', 'Succeeded')
+        ])
+
 
 class VMTrustedLaunchScenarioTest(ScenarioTest):
     @unittest.skip('Not supported')
