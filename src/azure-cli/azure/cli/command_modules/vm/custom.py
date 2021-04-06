@@ -29,7 +29,7 @@ from knack.util import CLIError
 
 from azure.cli.command_modules.vm._validators import _get_resource_group_from_vault_name
 from azure.cli.core.commands.validators import validate_file_or_dict
-from azure.cli.core.azclierror import ValidationError
+from azure.cli.core.azclierror import ValidationError, AzureInternalError
 
 from azure.cli.core.commands import LongRunningOperation, DeploymentOutputLongRunningOperation
 from azure.cli.core.commands.client_factory import get_mgmt_service_client, get_data_service_client
@@ -3728,12 +3728,12 @@ def set_disk_access(cmd, client, parameters, resource_group_name, disk_access_na
 
 
 # region install patches
-def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, reboot_setting, classifications_to_include=None, kb_numbers_to_include=None, kb_numbers_to_exclude=None,
+def install_vm_patches(cmd, client, resource_group_name, vm_name, maximum_duration, reboot_setting, classifications_to_include=None, kb_numbers_to_include=None, kb_numbers_to_exclude=None,
                        exclude_kbs_requiring_reboot=None, package_name_masks_to_include=None, package_name_masks_to_exclude=None, no_wait=False):
     VMInstallPatchesParameters, WindowsParameters, LinuxParameters, VMGuestPatchClassificationWindows, VMGuestPatchClassificationLinux = cmd.get_models(
         'VirtualMachineInstallPatchesParameters', 'WindowsParameters', 'LinuxParameters', 'VMGuestPatchClassificationWindows', 'VMGuestPatchClassificationLinux')
-    ccf = _compute_client_factory(cmd.cli_ctx)
-    vm = ccf.virtual_machines.get(resource_group_name, vm_name)
+
+    vm = client.get(resource_group_name, vm_name)
     if not vm:
         raise ValidationError("Can't get the vm named {} in resource group {}".format(vm_name, resource_group_name))
     osType = vm.storage_profile.os_disk.os_type.lower()
@@ -3752,8 +3752,8 @@ def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, rebo
         linux_parameters = LinuxParameters(classifications_to_include=classifications_to_include, package_name_masks_to_include=package_name_masks_to_include, package_name_masks_to_exclude=package_name_masks_to_exclude)
         install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, linux_parameters=linux_parameters)
     else:
-        raise ValidationError('osType {} of the vm is not allowed'.format(osType))
+        raise AzureInternalError('osType {} of the vm is not allowed'.format(osType))
 
-    return sdk_no_wait(no_wait, ccf.virtual_machines.begin_install_patches, resource_group_name=resource_group_name, vm_name=vm_name, install_patches_input=install_patches_input)
+    return sdk_no_wait(no_wait, client.begin_install_patches, resource_group_name=resource_group_name, vm_name=vm_name, install_patches_input=install_patches_input)
 
 # endregion

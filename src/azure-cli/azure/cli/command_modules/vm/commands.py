@@ -260,7 +260,7 @@ def load_command_table(self, _):
         g.generic_update_command('update', custom_func_name='update_snapshot', setter_name='begin_create_or_update', setter_arg_name='snapshot', supports_no_wait=True)
         g.wait_command('wait')
 
-    with self.command_group('vm', compute_vm_sdk) as g:
+    with self.command_group('vm', compute_vm_sdk, client_factory=cf_vm) as g:
         g.custom_command('identity assign', 'assign_vm_identity', validator=process_assign_identity_namespace)
         g.custom_command('identity remove', 'remove_vm_identity', validator=process_remove_identity_namespace, min_api='2017-12-01')
         g.custom_show_command('identity show', 'show_vm_identity')
