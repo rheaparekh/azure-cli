@@ -3,7 +3,7 @@
 # Licensed under the MIT License. See License.txt in the project root for license information.
 # --------------------------------------------------------------------------------------------
 
-# pylint: disable=line-too-long
+# pylint: disable=line-too-long, too-many-lines
 from argcomplete.completers import FilesCompleter
 
 from knack.arguments import CLIArgumentType
@@ -387,7 +387,6 @@ def load_arguments(self, _):
         c.argument('storage_account', completer=get_resource_name_completion_list('Microsoft.Storage/storageAccounts'))
 
     with self.argument_context('vm install-patches') as c:
-        c.argument('vm_name', arg_type=existing_vm_name)
         c.argument('maximum_duration', type=str, help='Specify the maximum amount of time that the operation will run. It must be an ISO 8601-compliant duration string such as PT4H (4 hours)')
         c.argument('reboot_setting', arg_type=get_enum_type(RebootSetting), help='Define when it is acceptable to reboot a VM during a software update operation. Possible values are: IfRequired/ Never/Always')
         c.argument('classifications_to_include', options_list=['--cfs-include'], nargs='+', help='Space-separated list of classifications to include. Possible values for Windows VM: Critical/Security/UpdateRollUp/FeaturePack/ServicePack/Definition/Tools/Updates. Possible values for Linux VM: Critical/Security/Security')
