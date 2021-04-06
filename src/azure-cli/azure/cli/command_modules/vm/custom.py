@@ -3735,7 +3735,7 @@ def install_vm_patches(cmd, client, resource_group_name, vm_name, maximum_durati
 
     vm = client.get(resource_group_name, vm_name)
     if not vm:
-        raise ValidationError("Can't get the vm named {} in resource group {}".format(vm_name, resource_group_name))
+        raise ValidationError("Can't get the VM named {} in resource group {}".format(vm_name, resource_group_name))
     osType = vm.storage_profile.os_disk.os_type.lower()
     if osType == 'windows':
         if classifications_to_include:
