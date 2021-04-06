@@ -3728,12 +3728,12 @@ def set_disk_access(cmd, client, parameters, resource_group_name, disk_access_na
 
 
 # region install patches
-def install_vm_patches(cmd, client, resource_group_name, vm_name, maximum_duration, reboot_setting, classifications_to_include=None, kb_numbers_to_include=None, kb_numbers_to_exclude=None,
+def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, reboot_setting, classifications_to_include=None, kb_numbers_to_include=None, kb_numbers_to_exclude=None,
                        exclude_kbs_requiring_reboot=None, package_name_masks_to_include=None, package_name_masks_to_exclude=None, no_wait=False):
     VMInstallPatchesParameters, WindowsParameters, LinuxParameters, VMGuestPatchClassificationWindows, VMGuestPatchClassificationLinux = cmd.get_models(
         'VirtualMachineInstallPatchesParameters', 'WindowsParameters', 'LinuxParameters', 'VMGuestPatchClassificationWindows', 'VMGuestPatchClassificationLinux')
-
-    vm = client.get(resource_group_name, vm_name)
+    ccf = _compute_client_factory(cmd.cli_ctx)
+    vm = ccf.virtual_machines.get(resource_group_name, vm_name)
     if not vm:
         raise ValidationError("Can't get the VM named {} in resource group {}".format(vm_name, resource_group_name))
     osType = vm.storage_profile.os_disk.os_type.lower()
@@ -3754,6 +3754,6 @@ def install_vm_patches(cmd, client, resource_group_name, vm_name, maximum_durati
     else:
         raise AzureInternalError('osType {} of the vm is not allowed'.format(osType))
 
-    return sdk_no_wait(no_wait, client.begin_install_patches, resource_group_name=resource_group_name, vm_name=vm_name, install_patches_input=install_patches_input)
+    return sdk_no_wait(no_wait, ccf.virtual_machines.begin_install_patches, resource_group_name=resource_group_name, vm_name=vm_name, install_patches_input=install_patches_input)
 
 # endregion
