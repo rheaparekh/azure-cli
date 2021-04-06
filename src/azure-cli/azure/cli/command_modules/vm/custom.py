@@ -3752,7 +3752,7 @@ def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, rebo
         linux_parameters = LinuxParameters(classifications_to_include=classifications_to_include, package_name_masks_to_include=package_name_masks_to_include, package_name_masks_to_exclude=package_name_masks_to_exclude)
         install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, linux_parameters=linux_parameters)
     else:
-        raise CLIError('osType {} of the vm is not allowed'.format(osType))
+        raise ValidationError('osType {} of the vm is not allowed'.format(osType))
 
     return sdk_no_wait(no_wait, ccf.virtual_machines.begin_install_patches, resource_group_name=resource_group_name, vm_name=vm_name, install_patches_input=install_patches_input)
 
