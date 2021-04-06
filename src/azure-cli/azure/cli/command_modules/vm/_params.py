@@ -388,7 +388,7 @@ def load_arguments(self, _):
 
     with self.argument_context('vm install-patches') as c:
         c.argument('maximum_duration', type=str, help='Specify the maximum amount of time that the operation will run. It must be an ISO 8601-compliant duration string such as PT4H (4 hours)')
-        c.argument('reboot_setting', arg_type=get_enum_type(RebootSetting), help='Define when it is acceptable to reboot a VM during a software update operation. Possible values are: IfRequired/ Never/Always')
+        c.argument('reboot_setting', arg_type=get_enum_type(RebootSetting), help='Define when it is acceptable to reboot a VM during a software update operation.')
         c.argument('classifications_to_include', options_list=['--cfs-include'], nargs='+', help='Space-separated list of classifications to include. Possible values for Windows VM: Critical/Security/UpdateRollUp/FeaturePack/ServicePack/Definition/Tools/Updates. Possible values for Linux VM: Critical/Security/Security')
         c.argument('kb_numbers_to_include', nargs='+', options_list=['--kbn-include'], help='Space-separated list of KBs to include in the patch operation. Applicable to Windows VM only')
         c.argument('kb_numbers_to_exclude', nargs='+', options_list=['--kbn-exclude'], help='Space-separated list of KBs to exclude in the patch operation. Applicable to Windows VM only')
