@@ -21,7 +21,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001?api-version=2020-10-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001","name":"cli_test_vm_install_patches_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2021-04-06T09:16:32Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001","name":"cli_test_vm_install_patches_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2021-04-07T02:00:01Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -30,7 +30,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:16:34 GMT
+      - Wed, 07 Apr 2021 02:00:06 GMT
       expires:
       - '-1'
       pragma:
@@ -109,13 +109,13 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:16:36 GMT
+      - Wed, 07 Apr 2021 02:00:07 GMT
       etag:
       - W/"540044b4084c3c314537f1baa1770f248628b2bc9ba0328f1004c33862e049da"
       expires:
-      - Tue, 06 Apr 2021 09:21:36 GMT
+      - Wed, 07 Apr 2021 02:05:07 GMT
       source-age:
-      - '281'
+      - '274'
       strict-transport-security:
       - max-age=31536000
       vary:
@@ -129,15 +129,15 @@ interactions:
       x-content-type-options:
       - nosniff
       x-fastly-request-id:
-      - f69aeaaf5a856678e2dc5375dd2610558a04fcff
+      - ba241905f9d4c67975f77d898c3db82fd2fc0631
       x-frame-options:
       - deny
       x-github-request-id:
       - A884:695C:242C40:2B2160:6068FACA
       x-served-by:
-      - cache-qpg1223-QPG
+      - cache-qpg1272-QPG
       x-timer:
-      - S1617700596.141440,VS0,VE0
+      - S1617760807.348680,VS0,VE0
       x-xss-protection:
       - 1; mode=block
     status:
@@ -171,7 +171,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:16:35 GMT
+      - Wed, 07 Apr 2021 02:00:07 GMT
       expires:
       - '-1'
       pragma:
@@ -238,10 +238,10 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment?api-version=2020-10-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_ZCLnxNkFUGUG1QiLxSZZWj5mF4tBtezR","name":"vm_deploy_ZCLnxNkFUGUG1QiLxSZZWj5mF4tBtezR","type":"Microsoft.Resources/deployments","properties":{"templateHash":"2499940226770232329","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Accepted","timestamp":"2021-04-06T09:16:40.4211481Z","duration":"PT2.1552899S","correlationId":"8c54da47-782e-4d16-a291-ac7427219f81","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"virtualNetworks","locations":["westus"]},{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET","resourceType":"Microsoft.Network/virtualNetworks","resourceName":"vmVNET"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vmNSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vmPublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm"}]}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_aOu2MkqZNpKbTrxttiqp1pBBlr0jKvmW","name":"vm_deploy_aOu2MkqZNpKbTrxttiqp1pBBlr0jKvmW","type":"Microsoft.Resources/deployments","properties":{"templateHash":"7128322894786239530","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Accepted","timestamp":"2021-04-07T02:00:12.4349226Z","duration":"PT2.2730788S","correlationId":"fe3159e1-084d-4796-8e6e-6c77bb8ba5a9","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"virtualNetworks","locations":["westus"]},{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET","resourceType":"Microsoft.Network/virtualNetworks","resourceName":"vmVNET"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vmNSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vmPublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm"}]}}'
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_ZCLnxNkFUGUG1QiLxSZZWj5mF4tBtezR/operationStatuses/08585839062872117785?api-version=2020-10-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_aOu2MkqZNpKbTrxttiqp1pBBlr0jKvmW/operationStatuses/08585838460753157867?api-version=2020-10-01
       cache-control:
       - no-cache
       content-length:
@@ -249,7 +249,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:16:41 GMT
+      - Wed, 07 Apr 2021 02:00:13 GMT
       expires:
       - '-1'
       pragma:
@@ -259,7 +259,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1199'
     status:
       code: 201
       message: Created
@@ -280,7 +280,7 @@ interactions:
       - python/3.7.9 (Windows-10-10.0.19041-SP0) msrest/0.6.21 msrest_azure/0.6.3
         azure-mgmt-resource/12.0.0 Azure-SDK-For-Python AZURECLI/2.21.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585839062872117785?api-version=2020-10-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585838460753157867?api-version=2020-10-01
   response:
     body:
       string: '{"status":"Running"}'
@@ -292,7 +292,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:11 GMT
+      - Wed, 07 Apr 2021 02:00:44 GMT
       expires:
       - '-1'
       pragma:
@@ -323,7 +323,7 @@ interactions:
       - python/3.7.9 (Windows-10-10.0.19041-SP0) msrest/0.6.21 msrest_azure/0.6.3
         azure-mgmt-resource/12.0.0 Azure-SDK-For-Python AZURECLI/2.21.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585839062872117785?api-version=2020-10-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585838460753157867?api-version=2020-10-01
   response:
     body:
       string: '{"status":"Succeeded"}'
@@ -335,7 +335,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:42 GMT
+      - Wed, 07 Apr 2021 02:01:14 GMT
       expires:
       - '-1'
       pragma:
@@ -369,16 +369,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment?api-version=2020-10-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_ZCLnxNkFUGUG1QiLxSZZWj5mF4tBtezR","name":"vm_deploy_ZCLnxNkFUGUG1QiLxSZZWj5mF4tBtezR","type":"Microsoft.Resources/deployments","properties":{"templateHash":"2499940226770232329","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Succeeded","timestamp":"2021-04-06T09:17:33.5524409Z","duration":"PT55.2865827S","correlationId":"8c54da47-782e-4d16-a291-ac7427219f81","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"virtualNetworks","locations":["westus"]},{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET","resourceType":"Microsoft.Network/virtualNetworks","resourceName":"vmVNET"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vmNSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vmPublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm"}],"outputs":{},"outputResources":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET"}]}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_aOu2MkqZNpKbTrxttiqp1pBBlr0jKvmW","name":"vm_deploy_aOu2MkqZNpKbTrxttiqp1pBBlr0jKvmW","type":"Microsoft.Resources/deployments","properties":{"templateHash":"7128322894786239530","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Succeeded","timestamp":"2021-04-07T02:01:10.9894536Z","duration":"PT1M0.8276098S","correlationId":"fe3159e1-084d-4796-8e6e-6c77bb8ba5a9","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"virtualNetworks","locations":["westus"]},{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET","resourceType":"Microsoft.Network/virtualNetworks","resourceName":"vmVNET"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vmNSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vmPublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vmVMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm"}],"outputs":{},"outputResources":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3829'
+      - '3830'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:43 GMT
+      - Wed, 07 Apr 2021 02:01:14 GMT
       expires:
       - '-1'
       pragma:
@@ -413,16 +413,16 @@ interactions:
     body:
       string: "{\r\n  \"name\": \"vm\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm\",\r\n
         \ \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"95d9f1a1-3bcb-4058-b7f2-66b054def376\",\r\n
+        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"e1f4c5cd-6654-4d92-a3f2-9f7df4d11ff4\",\r\n
         \   \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS1_v2\"\r\n    },\r\n
         \   \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\":
         \"MicrosoftWindowsServer\",\r\n        \"offer\": \"WindowsServer\",\r\n        \"sku\":
         \"2019-Datacenter\",\r\n        \"version\": \"latest\",\r\n        \"exactVersion\":
         \"17763.1817.2103030313\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\":
-        \"Windows\",\r\n        \"name\": \"vm_disk1_ec948dc85ab84bd4b5e2c3d0c6317897\",\r\n
+        \"Windows\",\r\n        \"name\": \"vm_disk1_7cde1b3db2d348a0b82226a86165d6af\",\r\n
         \       \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n
         \       \"managedDisk\": {\r\n          \"storageAccountType\": \"Premium_LRS\",\r\n
-        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm_disk1_ec948dc85ab84bd4b5e2c3d0c6317897\"\r\n
+        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm_disk1_7cde1b3db2d348a0b82226a86165d6af\"\r\n
         \       },\r\n        \"diskSizeGB\": 127\r\n      },\r\n      \"dataDisks\":
         []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"vm\",\r\n
         \     \"adminUsername\": \"azureuser\",\r\n      \"windowsConfiguration\":
@@ -436,16 +436,16 @@ interactions:
         \         {\r\n            \"code\": \"ProvisioningState/Unavailable\",\r\n
         \           \"level\": \"Warning\",\r\n            \"displayStatus\": \"Not
         Ready\",\r\n            \"message\": \"VM status blob is found but not yet
-        populated.\",\r\n            \"time\": \"2021-04-06T09:17:44+00:00\"\r\n          }\r\n
+        populated.\",\r\n            \"time\": \"2021-04-07T02:01:16+00:00\"\r\n          }\r\n
         \       ]\r\n      },\r\n      \"disks\": [\r\n        {\r\n          \"name\":
-        \"vm_disk1_ec948dc85ab84bd4b5e2c3d0c6317897\",\r\n          \"statuses\":
+        \"vm_disk1_7cde1b3db2d348a0b82226a86165d6af\",\r\n          \"statuses\":
         [\r\n            {\r\n              \"code\": \"ProvisioningState/succeeded\",\r\n
         \             \"level\": \"Info\",\r\n              \"displayStatus\": \"Provisioning
-        succeeded\",\r\n              \"time\": \"2021-04-06T09:17:09.9805854+00:00\"\r\n
+        succeeded\",\r\n              \"time\": \"2021-04-07T02:00:45.4364248+00:00\"\r\n
         \           }\r\n          ]\r\n        }\r\n      ],\r\n      \"hyperVGeneration\":
         \"V1\",\r\n      \"statuses\": [\r\n        {\r\n          \"code\": \"ProvisioningState/succeeded\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"Provisioning
-        succeeded\",\r\n          \"time\": \"2021-04-06T09:17:32.059702+00:00\"\r\n
+        succeeded\",\r\n          \"time\": \"2021-04-07T02:01:09.4374897+00:00\"\r\n
         \       },\r\n        {\r\n          \"code\": \"PowerState/running\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"VM running\"\r\n
         \       }\r\n      ]\r\n    }\r\n  }\r\n}"
@@ -453,11 +453,11 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '3181'
+      - '3182'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:44 GMT
+      - Wed, 07 Apr 2021 02:01:15 GMT
       expires:
       - '-1'
       pragma:
@@ -474,7 +474,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;3995,Microsoft.Compute/LowCostGet30Min;31989
+      - Microsoft.Compute/LowCostGet3Min;3997,Microsoft.Compute/LowCostGet30Min;31997
     status:
       code: 200
       message: OK
@@ -498,12 +498,12 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"vmVMNic\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic\",\r\n
-        \ \"etag\": \"W/\\\"53b89adf-6977-481e-b208-66a77eed4bca\\\"\",\r\n  \"location\":
+        \ \"etag\": \"W/\\\"099c38d5-f6b1-417e-8098-5e323623e618\\\"\",\r\n  \"location\":
         \"westus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\",\r\n    \"resourceGuid\": \"66364474-e7fc-43d8-9d40-ddc9ef1adf7b\",\r\n
+        \"Succeeded\",\r\n    \"resourceGuid\": \"702da858-6854-42c9-b063-8d7cf0549859\",\r\n
         \   \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"ipconfigvm\",\r\n
         \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic/ipConfigurations/ipconfigvm\",\r\n
-        \       \"etag\": \"W/\\\"53b89adf-6977-481e-b208-66a77eed4bca\\\"\",\r\n
+        \       \"etag\": \"W/\\\"099c38d5-f6b1-417e-8098-5e323623e618\\\"\",\r\n
         \       \"type\": \"Microsoft.Network/networkInterfaces/ipConfigurations\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n
         \         \"privateIPAddress\": \"10.0.0.4\",\r\n          \"privateIPAllocationMethod\":
@@ -512,8 +512,8 @@ interactions:
         \         },\r\n          \"primary\": true,\r\n          \"privateIPAddressVersion\":
         \"IPv4\"\r\n        }\r\n      }\r\n    ],\r\n    \"dnsSettings\": {\r\n      \"dnsServers\":
         [],\r\n      \"appliedDnsServers\": [],\r\n      \"internalDomainNameSuffix\":
-        \"fakfujsdni0uphwis5sz5hac1c.dx.internal.cloudapp.net\"\r\n    },\r\n    \"macAddress\":
-        \"00-22-48-08-3C-BA\",\r\n    \"enableAcceleratedNetworking\": false,\r\n
+        \"mlyb2emgch0u1bilklfa0uaewb.dx.internal.cloudapp.net\"\r\n    },\r\n    \"macAddress\":
+        \"00-0D-3A-37-88-4C\",\r\n    \"enableAcceleratedNetworking\": false,\r\n
         \   \"enableIPForwarding\": false,\r\n    \"networkSecurityGroup\": {\r\n
         \     \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vmNSG\"\r\n
         \   },\r\n    \"primary\": true,\r\n    \"virtualMachine\": {\r\n      \"id\":
@@ -527,9 +527,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:45 GMT
+      - Wed, 07 Apr 2021 02:01:16 GMT
       etag:
-      - W/"53b89adf-6977-481e-b208-66a77eed4bca"
+      - W/"099c38d5-f6b1-417e-8098-5e323623e618"
       expires:
       - '-1'
       pragma:
@@ -546,7 +546,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 5801a29d-a4c3-4203-84bb-6975584a67e6
+      - 2f77204e-8a31-48fd-9c4e-17d0a671d518
     status:
       code: 200
       message: OK
@@ -570,11 +570,11 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"vmPublicIP\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vmPublicIP\",\r\n
-        \ \"etag\": \"W/\\\"39d1da5d-5f38-4652-9409-8951387f74b2\\\"\",\r\n  \"location\":
+        \ \"etag\": \"W/\\\"4864da96-843f-4094-8040-a7ec2a3dd6eb\\\"\",\r\n  \"location\":
         \"westus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\",\r\n    \"resourceGuid\": \"3767f7d4-01e5-4353-8ec7-1a921ec5ddee\",\r\n
-        \   \"ipAddress\": \"104.42.109.182\",\r\n    \"publicIPAddressVersion\":
-        \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\":
+        \"Succeeded\",\r\n    \"resourceGuid\": \"e3073e30-3a81-419b-8aca-de5abeb5a09d\",\r\n
+        \   \"ipAddress\": \"13.91.131.8\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n
+        \   \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\":
         4,\r\n    \"ipTags\": [],\r\n    \"ipConfiguration\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic/ipConfigurations/ipconfigvm\"\r\n
         \   }\r\n  },\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n
         \ \"sku\": {\r\n    \"name\": \"Basic\"\r\n  }\r\n}"
@@ -582,13 +582,13 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '994'
+      - '991'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:45 GMT
+      - Wed, 07 Apr 2021 02:01:16 GMT
       etag:
-      - W/"39d1da5d-5f38-4652-9409-8951387f74b2"
+      - W/"4864da96-843f-4094-8040-a7ec2a3dd6eb"
       expires:
       - '-1'
       pragma:
@@ -605,7 +605,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 5bf0a2b4-f674-43d7-a05b-f568aa816989
+      - dacd381d-3ab3-488f-bab2-6e0965c75c62
     status:
       code: 200
       message: OK
@@ -630,16 +630,16 @@ interactions:
     body:
       string: "{\r\n  \"name\": \"vm\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm\",\r\n
         \ \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"95d9f1a1-3bcb-4058-b7f2-66b054def376\",\r\n
+        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"e1f4c5cd-6654-4d92-a3f2-9f7df4d11ff4\",\r\n
         \   \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS1_v2\"\r\n    },\r\n
         \   \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\":
         \"MicrosoftWindowsServer\",\r\n        \"offer\": \"WindowsServer\",\r\n        \"sku\":
         \"2019-Datacenter\",\r\n        \"version\": \"latest\",\r\n        \"exactVersion\":
         \"17763.1817.2103030313\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\":
-        \"Windows\",\r\n        \"name\": \"vm_disk1_ec948dc85ab84bd4b5e2c3d0c6317897\",\r\n
+        \"Windows\",\r\n        \"name\": \"vm_disk1_7cde1b3db2d348a0b82226a86165d6af\",\r\n
         \       \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n
         \       \"managedDisk\": {\r\n          \"storageAccountType\": \"Premium_LRS\",\r\n
-        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm_disk1_ec948dc85ab84bd4b5e2c3d0c6317897\"\r\n
+        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm_disk1_7cde1b3db2d348a0b82226a86165d6af\"\r\n
         \       },\r\n        \"diskSizeGB\": 127\r\n      },\r\n      \"dataDisks\":
         []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"vm\",\r\n
         \     \"adminUsername\": \"azureuser\",\r\n      \"windowsConfiguration\":
@@ -653,16 +653,16 @@ interactions:
         \         {\r\n            \"code\": \"ProvisioningState/Unavailable\",\r\n
         \           \"level\": \"Warning\",\r\n            \"displayStatus\": \"Not
         Ready\",\r\n            \"message\": \"VM status blob is found but not yet
-        populated.\",\r\n            \"time\": \"2021-04-06T09:17:45+00:00\"\r\n          }\r\n
+        populated.\",\r\n            \"time\": \"2021-04-07T02:01:17+00:00\"\r\n          }\r\n
         \       ]\r\n      },\r\n      \"disks\": [\r\n        {\r\n          \"name\":
-        \"vm_disk1_ec948dc85ab84bd4b5e2c3d0c6317897\",\r\n          \"statuses\":
+        \"vm_disk1_7cde1b3db2d348a0b82226a86165d6af\",\r\n          \"statuses\":
         [\r\n            {\r\n              \"code\": \"ProvisioningState/succeeded\",\r\n
         \             \"level\": \"Info\",\r\n              \"displayStatus\": \"Provisioning
-        succeeded\",\r\n              \"time\": \"2021-04-06T09:17:09.9805854+00:00\"\r\n
+        succeeded\",\r\n              \"time\": \"2021-04-07T02:00:45.4364248+00:00\"\r\n
         \           }\r\n          ]\r\n        }\r\n      ],\r\n      \"hyperVGeneration\":
         \"V1\",\r\n      \"statuses\": [\r\n        {\r\n          \"code\": \"ProvisioningState/succeeded\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"Provisioning
-        succeeded\",\r\n          \"time\": \"2021-04-06T09:17:32.059702+00:00\"\r\n
+        succeeded\",\r\n          \"time\": \"2021-04-07T02:01:09.4374897+00:00\"\r\n
         \       },\r\n        {\r\n          \"code\": \"PowerState/running\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"VM running\"\r\n
         \       }\r\n      ]\r\n    }\r\n  }\r\n}"
@@ -670,11 +670,11 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '3181'
+      - '3182'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:17:45 GMT
+      - Wed, 07 Apr 2021 02:01:17 GMT
       expires:
       - '-1'
       pragma:
@@ -691,7 +691,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;3994,Microsoft.Compute/LowCostGet30Min;31988
+      - Microsoft.Compute/LowCostGet3Min;3996,Microsoft.Compute/LowCostGet30Min;31996
     status:
       code: 200
       message: OK
@@ -722,17 +722,17 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
       cache-control:
       - no-cache
       content-length:
       - '0'
       date:
-      - Tue, 06 Apr 2021 09:17:46 GMT
+      - Wed, 07 Apr 2021 02:01:19 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?monitor=true&api-version=2020-12-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?monitor=true&api-version=2020-12-01
       pragma:
       - no-cache
       server:
@@ -745,7 +745,7 @@ interactions:
       x-ms-ratelimit-remaining-resource:
       - Microsoft.Compute/PatchOperation3Min;189,Microsoft.Compute/PatchOperation30Min;599
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1198'
     status:
       code: 202
       message: Accepted
@@ -765,11 +765,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -778,7 +778,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:18:16 GMT
+      - Wed, 07 Apr 2021 02:01:49 GMT
       expires:
       - '-1'
       pragma:
@@ -795,7 +795,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14996,Microsoft.Compute/GetOperation30Min;29992
+      - Microsoft.Compute/GetOperation3Min;14996,Microsoft.Compute/GetOperation30Min;29996
     status:
       code: 200
       message: OK
@@ -815,11 +815,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -828,7 +828,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:18:47 GMT
+      - Wed, 07 Apr 2021 02:02:20 GMT
       expires:
       - '-1'
       pragma:
@@ -845,7 +845,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14993,Microsoft.Compute/GetOperation30Min;29989
+      - Microsoft.Compute/GetOperation3Min;14993,Microsoft.Compute/GetOperation30Min;29993
     status:
       code: 200
       message: OK
@@ -865,11 +865,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -878,7 +878,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:19:17 GMT
+      - Wed, 07 Apr 2021 02:02:50 GMT
       expires:
       - '-1'
       pragma:
@@ -895,7 +895,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14990,Microsoft.Compute/GetOperation30Min;29986
+      - Microsoft.Compute/GetOperation3Min;14990,Microsoft.Compute/GetOperation30Min;29990
     status:
       code: 200
       message: OK
@@ -915,11 +915,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -928,7 +928,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:19:47 GMT
+      - Wed, 07 Apr 2021 02:03:19 GMT
       expires:
       - '-1'
       pragma:
@@ -945,7 +945,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14987,Microsoft.Compute/GetOperation30Min;29983
+      - Microsoft.Compute/GetOperation3Min;14987,Microsoft.Compute/GetOperation30Min;29987
     status:
       code: 200
       message: OK
@@ -965,11 +965,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -978,7 +978,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:20:18 GMT
+      - Wed, 07 Apr 2021 02:03:50 GMT
       expires:
       - '-1'
       pragma:
@@ -995,7 +995,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29980
+      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29984
     status:
       code: 200
       message: OK
@@ -1015,11 +1015,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -1028,7 +1028,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:20:48 GMT
+      - Wed, 07 Apr 2021 02:04:21 GMT
       expires:
       - '-1'
       pragma:
@@ -1045,7 +1045,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29977
+      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29981
     status:
       code: 200
       message: OK
@@ -1065,11 +1065,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -1078,7 +1078,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:21:18 GMT
+      - Wed, 07 Apr 2021 02:04:51 GMT
       expires:
       - '-1'
       pragma:
@@ -1095,7 +1095,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29974
+      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29978
     status:
       code: 200
       message: OK
@@ -1115,11 +1115,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -1128,7 +1128,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:21:48 GMT
+      - Wed, 07 Apr 2021 02:05:22 GMT
       expires:
       - '-1'
       pragma:
@@ -1145,7 +1145,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29971
+      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29976
     status:
       code: 200
       message: OK
@@ -1165,11 +1165,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -1178,7 +1178,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:19 GMT
+      - Wed, 07 Apr 2021 02:05:51 GMT
       expires:
       - '-1'
       pragma:
@@ -1195,7 +1195,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29969
+      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29973
     status:
       code: 200
       message: OK
@@ -1215,62 +1215,35 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:17:46.2634961+00:00\",\r\n  \"endTime\":
-        \"2021-04-06T09:22:38.2923593+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
-        \ \"properties\": {\r\n    \"output\": {\r\n  \"status\": \"Succeeded\",\r\n
-        \ \"installationActivityId\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\",\r\n
-        \ \"rebootStatus\": \"NotNeeded\",\r\n  \"maintenanceWindowExceeded\": false,\r\n
-        \ \"excludedPatchCount\": 0,\r\n  \"notSelectedPatchCount\": 6,\r\n  \"pendingPatchCount\":
-        0,\r\n  \"installedPatchCount\": 2,\r\n  \"failedPatchCount\": 0,\r\n  \"patches\":
-        [\r\n    {\r\n      \"patchId\": \"1abb2377-20ef-43ff-aabc-0de4711ab205\",\r\n
-        \     \"name\": \"2020-10 Security Update for Adobe Flash Player for Windows
-        Server 2019 for x64-based Systems (KB4580325)\",\r\n      \"kbId\": \"4580325\",\r\n
-        \     \"classifications\": [\r\n        \"Security\"\r\n      ],\r\n      \"installationState\":
-        \"Installed\",\r\n      \"msrcSeverity\": \"Critical\"\r\n    },\r\n    {\r\n
-        \     \"patchId\": \"33a64099-ba99-4e7f-a2d7-cf7d7fc4029f\",\r\n      \"name\":
-        \"Security Update for Windows Server 2019 for x64-based Systems (KB4535680)\",\r\n
-        \     \"kbId\": \"4535680\",\r\n      \"classifications\": [\r\n        \"Security\"\r\n
-        \     ],\r\n      \"installationState\": \"Installed\",\r\n      \"msrcSeverity\":
-        \"Important\"\r\n    },\r\n    {\r\n      \"patchId\": \"e3b03a38-d82f-4c2c-8dfe-d69abca6a7be\",\r\n
-        \     \"name\": \"2021-02 Cumulative Update Preview for .NET Framework 3.5,
-        4.7.2 and 4.8 for Windows Server 2019 for x64 (KB4602298)\",\r\n      \"kbId\":
-        \"4602298\",\r\n      \"classifications\": [\r\n        \"Updates\"\r\n      ],\r\n
-        \     \"installationState\": \"NotSelected\"\r\n    },\r\n    {\r\n      \"patchId\":
-        \"f26a0046-1e1a-4305-8743-19c92c3095a5\",\r\n      \"name\": \"Update for
-        Removal of Adobe Flash Player for Windows Server 2019 for x64-based systems
-        (KB4577586)\",\r\n      \"kbId\": \"4577586\",\r\n      \"classifications\":
-        [\r\n        \"Updates\"\r\n      ],\r\n      \"installationState\": \"NotSelected\"\r\n
-        \   },\r\n    {\r\n      \"patchId\": \"d4e3dc75-c215-4aeb-8d9c-0bc297216b54\",\r\n
-        \     \"name\": \"Windows Malicious Software Removal Tool x64 - v5.87 (KB890830)\",\r\n
-        \     \"kbId\": \"890830\",\r\n      \"classifications\": [\r\n        \"UpdateRollUp\"\r\n
-        \     ],\r\n      \"installationState\": \"NotSelected\"\r\n    },\r\n    {\r\n
-        \     \"patchId\": \"89e11227-761b-4396-bf37-37a2b641fa84\",\r\n      \"name\":
-        \"2021-01 Update for Windows Server 2019 for x64-based Systems (KB4589208)\",\r\n
-        \     \"kbId\": \"4589208\",\r\n      \"classifications\": [\r\n        \"Updates\"\r\n
-        \     ],\r\n      \"installationState\": \"NotSelected\"\r\n    },\r\n    {\r\n
-        \     \"patchId\": \"7e1e6423-64cd-4e4c-a85d-ae389cb7f9e9\",\r\n      \"name\":
-        \"Security Intelligence Update for Microsoft Defender Antivirus - KB2267602
-        (Version 1.335.314.0)\",\r\n      \"kbId\": \"2267602\",\r\n      \"classifications\":
-        [\r\n        \"Definition\"\r\n      ],\r\n      \"installationState\": \"NotSelected\"\r\n
-        \   },\r\n    {\r\n      \"patchId\": \"04567dc3-8c39-4282-bc01-ebdf230eb491\",\r\n
-        \     \"name\": \"2021-03 Cumulative Update Preview for Windows Server 2019
-        (1809) for x64-based Systems (KB5000854)\",\r\n      \"kbId\": \"5000854\",\r\n
-        \     \"classifications\": [\r\n        \"Updates\"\r\n      ],\r\n      \"installationState\":
-        \"NotSelected\"\r\n    }\r\n  ],\r\n  \"startDateTime\": \"2021-04-06T09:17:47.3416646+00:00\",\r\n
-        \ \"error\": {\r\n    \"details\": [],\r\n    \"code\": \"Success\",\r\n    \"message\":
-        \"0 error/s reported\"\r\n  }\r\n}\r\n  },\r\n  \"name\": \"f0d3c1bc-1d9f-4494-8483-56273bd89cc8\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:01:18.2347764+00:00\",\r\n  \"endTime\":
+        \"2021-04-07T02:06:10.9980467+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
+        \ \"properties\": {\r\n    \"output\": {\"status\":\"Succeeded\",\"installationActivityId\":\"7ae92e52-332c-4d83-bd72-4bbe8349395f\",\"rebootStatus\":\"NotNeeded\",\"maintenanceWindowExceeded\":false,\"excludedPatchCount\":0,\"notSelectedPatchCount\":6,\"pendingPatchCount\":0,\"installedPatchCount\":2,\"failedPatchCount\":0,\"patches\":[{\"patchId\":\"1abb2377-20ef-43ff-aabc-0de4711ab205\",\"name\":\"2020-10
+        Security Update for Adobe Flash Player for Windows Server 2019 for x64-based
+        Systems (KB4580325)\",\"kbId\":\"4580325\",\"classifications\":[\"Security\"],\"installationState\":\"Installed\",\"msrcSeverity\":\"Critical\"},{\"patchId\":\"33a64099-ba99-4e7f-a2d7-cf7d7fc4029f\",\"name\":\"Security
+        Update for Windows Server 2019 for x64-based Systems (KB4535680)\",\"kbId\":\"4535680\",\"classifications\":[\"Security\"],\"installationState\":\"Installed\",\"msrcSeverity\":\"Important\"},{\"patchId\":\"e3b03a38-d82f-4c2c-8dfe-d69abca6a7be\",\"name\":\"2021-02
+        Cumulative Update Preview for .NET Framework 3.5, 4.7.2 and 4.8 for Windows
+        Server 2019 for x64 (KB4602298)\",\"kbId\":\"4602298\",\"classifications\":[\"Updates\"],\"installationState\":\"NotSelected\"},{\"patchId\":\"f26a0046-1e1a-4305-8743-19c92c3095a5\",\"name\":\"Update
+        for Removal of Adobe Flash Player for Windows Server 2019 for x64-based systems
+        (KB4577586)\",\"kbId\":\"4577586\",\"classifications\":[\"Updates\"],\"installationState\":\"NotSelected\"},{\"patchId\":\"d4e3dc75-c215-4aeb-8d9c-0bc297216b54\",\"name\":\"Windows
+        Malicious Software Removal Tool x64 - v5.87 (KB890830)\",\"kbId\":\"890830\",\"classifications\":[\"UpdateRollUp\"],\"installationState\":\"NotSelected\"},{\"patchId\":\"89e11227-761b-4396-bf37-37a2b641fa84\",\"name\":\"2021-01
+        Update for Windows Server 2019 for x64-based Systems (KB4589208)\",\"kbId\":\"4589208\",\"classifications\":[\"Updates\"],\"installationState\":\"NotSelected\"},{\"patchId\":\"daf4f064-b68b-4a19-8f5a-18dbd91409fd\",\"name\":\"Security
+        Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version
+        1.335.360.0)\",\"kbId\":\"2267602\",\"classifications\":[\"Definition\"],\"installationState\":\"NotSelected\"},{\"patchId\":\"04567dc3-8c39-4282-bc01-ebdf230eb491\",\"name\":\"2021-03
+        Cumulative Update Preview for Windows Server 2019 (1809) for x64-based Systems
+        (KB5000854)\",\"kbId\":\"5000854\",\"classifications\":[\"Updates\"],\"installationState\":\"NotSelected\"}],\"startDateTime\":\"2021-04-07T02:01:19.3129464+00:00\",\"error\":{\"details\":[],\"code\":\"Success\",\"message\":\"0
+        error/s reported\"}}\r\n  },\r\n  \"name\": \"7ae92e52-332c-4d83-bd72-4bbe8349395f\"\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3243'
+      - '2534'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:49 GMT
+      - Wed, 07 Apr 2021 02:06:23 GMT
       expires:
       - '-1'
       pragma:
@@ -1287,7 +1260,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29966
+      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29970
     status:
       code: 200
       message: OK
@@ -1307,10 +1280,10 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/f0d3c1bc-1d9f-4494-8483-56273bd89cc8?monitor=true&api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/7ae92e52-332c-4d83-bd72-4bbe8349395f?monitor=true&api-version=2020-12-01
   response:
     body:
-      string: '{"status":"Succeeded","installationActivityId":"f0d3c1bc-1d9f-4494-8483-56273bd89cc8","rebootStatus":"NotNeeded","maintenanceWindowExceeded":false,"excludedPatchCount":0,"notSelectedPatchCount":6,"pendingPatchCount":0,"installedPatchCount":2,"failedPatchCount":0,"patches":[{"patchId":"1abb2377-20ef-43ff-aabc-0de4711ab205","name":"2020-10
+      string: '{"status":"Succeeded","installationActivityId":"7ae92e52-332c-4d83-bd72-4bbe8349395f","rebootStatus":"NotNeeded","maintenanceWindowExceeded":false,"excludedPatchCount":0,"notSelectedPatchCount":6,"pendingPatchCount":0,"installedPatchCount":2,"failedPatchCount":0,"patches":[{"patchId":"1abb2377-20ef-43ff-aabc-0de4711ab205","name":"2020-10
         Security Update for Adobe Flash Player for Windows Server 2019 for x64-based
         Systems (KB4580325)","kbId":"4580325","classifications":["Security"],"installationState":"Installed","msrcSeverity":"Critical"},{"patchId":"33a64099-ba99-4e7f-a2d7-cf7d7fc4029f","name":"Security
         Update for Windows Server 2019 for x64-based Systems (KB4535680)","kbId":"4535680","classifications":["Security"],"installationState":"Installed","msrcSeverity":"Important"},{"patchId":"e3b03a38-d82f-4c2c-8dfe-d69abca6a7be","name":"2021-02
@@ -1319,11 +1292,11 @@ interactions:
         for Removal of Adobe Flash Player for Windows Server 2019 for x64-based systems
         (KB4577586)","kbId":"4577586","classifications":["Updates"],"installationState":"NotSelected"},{"patchId":"d4e3dc75-c215-4aeb-8d9c-0bc297216b54","name":"Windows
         Malicious Software Removal Tool x64 - v5.87 (KB890830)","kbId":"890830","classifications":["UpdateRollUp"],"installationState":"NotSelected"},{"patchId":"89e11227-761b-4396-bf37-37a2b641fa84","name":"2021-01
-        Update for Windows Server 2019 for x64-based Systems (KB4589208)","kbId":"4589208","classifications":["Updates"],"installationState":"NotSelected"},{"patchId":"7e1e6423-64cd-4e4c-a85d-ae389cb7f9e9","name":"Security
+        Update for Windows Server 2019 for x64-based Systems (KB4589208)","kbId":"4589208","classifications":["Updates"],"installationState":"NotSelected"},{"patchId":"daf4f064-b68b-4a19-8f5a-18dbd91409fd","name":"Security
         Intelligence Update for Microsoft Defender Antivirus - KB2267602 (Version
-        1.335.314.0)","kbId":"2267602","classifications":["Definition"],"installationState":"NotSelected"},{"patchId":"04567dc3-8c39-4282-bc01-ebdf230eb491","name":"2021-03
+        1.335.360.0)","kbId":"2267602","classifications":["Definition"],"installationState":"NotSelected"},{"patchId":"04567dc3-8c39-4282-bc01-ebdf230eb491","name":"2021-03
         Cumulative Update Preview for Windows Server 2019 (1809) for x64-based Systems
-        (KB5000854)","kbId":"5000854","classifications":["Updates"],"installationState":"NotSelected"}],"startDateTime":"2021-04-06T09:17:47.3416646+00:00","error":{"details":[],"code":"Success","message":"0
+        (KB5000854)","kbId":"5000854","classifications":["Updates"],"installationState":"NotSelected"}],"startDateTime":"2021-04-07T02:01:19.3129464+00:00","error":{"details":[],"code":"Success","message":"0
         error/s reported"}}'
     headers:
       cache-control:
@@ -1333,7 +1306,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:49 GMT
+      - Wed, 07 Apr 2021 02:06:23 GMT
       expires:
       - '-1'
       pragma:
@@ -1350,7 +1323,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29965
+      - Microsoft.Compute/GetOperation3Min;14983,Microsoft.Compute/GetOperation30Min;29969
     status:
       code: 200
       message: OK
@@ -1376,7 +1349,7 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001?api-version=2020-10-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001","name":"cli_test_vm_install_patches_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2021-04-06T09:16:32Z"},"properties":{"provisioningState":"Succeeded"}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001","name":"cli_test_vm_install_patches_000001","type":"Microsoft.Resources/resourceGroups","location":"westus","tags":{"product":"azurecli","cause":"automation","date":"2021-04-07T02:00:01Z"},"properties":{"provisioningState":"Succeeded"}}'
     headers:
       cache-control:
       - no-cache
@@ -1385,7 +1358,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:50 GMT
+      - Wed, 07 Apr 2021 02:06:24 GMT
       expires:
       - '-1'
       pragma:
@@ -1464,13 +1437,13 @@ interactions:
       content-type:
       - text/plain; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:51 GMT
+      - Wed, 07 Apr 2021 02:06:25 GMT
       etag:
       - W/"540044b4084c3c314537f1baa1770f248628b2bc9ba0328f1004c33862e049da"
       expires:
-      - Tue, 06 Apr 2021 09:27:51 GMT
+      - Wed, 07 Apr 2021 02:11:25 GMT
       source-age:
-      - '0'
+      - '5'
       strict-transport-security:
       - max-age=31536000
       vary:
@@ -1484,15 +1457,15 @@ interactions:
       x-content-type-options:
       - nosniff
       x-fastly-request-id:
-      - 9f45ca72c72dada5300de77cfbb559198e10deeb
+      - d3d3819347d254f53b09f16c5a7a752631e4d710
       x-frame-options:
       - deny
       x-github-request-id:
       - A884:695C:242C40:2B2160:6068FACA
       x-served-by:
-      - cache-qpg1253-QPG
+      - cache-qpg1273-QPG
       x-timer:
-      - S1617700972.624653,VS0,VE282
+      - S1617761185.364550,VS0,VE1
       x-xss-protection:
       - 1; mode=block
     status:
@@ -1519,14 +1492,14 @@ interactions:
     body:
       string: "{\r\n  \"value\": [\r\n    {\r\n      \"name\": \"vmVNET\",\r\n      \"id\":
         \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET\",\r\n
-        \     \"etag\": \"W/\\\"79d11d62-0f85-4d6b-ba98-91316944c1d4\\\"\",\r\n      \"type\":
+        \     \"etag\": \"W/\\\"3ba4c62a-f43f-48aa-858c-41cab9b724b5\\\"\",\r\n      \"type\":
         \"Microsoft.Network/virtualNetworks\",\r\n      \"location\": \"westus\",\r\n
         \     \"tags\": {},\r\n      \"properties\": {\r\n        \"provisioningState\":
-        \"Succeeded\",\r\n        \"resourceGuid\": \"265a1428-6a43-4735-9ec8-97e59f9c02da\",\r\n
+        \"Succeeded\",\r\n        \"resourceGuid\": \"111ef062-1186-4df5-850b-52ca0d5004b1\",\r\n
         \       \"addressSpace\": {\r\n          \"addressPrefixes\": [\r\n            \"10.0.0.0/16\"\r\n
         \         ]\r\n        },\r\n        \"subnets\": [\r\n          {\r\n            \"name\":
         \"vmSubnet\",\r\n            \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/virtualNetworks/vmVNET/subnets/vmSubnet\",\r\n
-        \           \"etag\": \"W/\\\"79d11d62-0f85-4d6b-ba98-91316944c1d4\\\"\",\r\n
+        \           \"etag\": \"W/\\\"3ba4c62a-f43f-48aa-858c-41cab9b724b5\\\"\",\r\n
         \           \"properties\": {\r\n              \"provisioningState\": \"Succeeded\",\r\n
         \             \"addressPrefix\": \"10.0.0.0/24\",\r\n              \"ipConfigurations\":
         [\r\n                {\r\n                  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vmVMNic/ipConfigurations/ipconfigvm\"\r\n
@@ -1542,7 +1515,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:51 GMT
+      - Wed, 07 Apr 2021 02:06:25 GMT
       expires:
       - '-1'
       pragma:
@@ -1559,7 +1532,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 450c77d5-6b36-407f-8544-ceb7a8937ebb
+      - ea780cdd-8860-4ed5-8f75-61a9bbabc240
     status:
       code: 200
       message: OK
@@ -1613,18 +1586,18 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment?api-version=2020-10-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_rD1qpMwiMgJQrWPW2USTSspzF9yAVlgC","name":"vm_deploy_rD1qpMwiMgJQrWPW2USTSspzF9yAVlgC","type":"Microsoft.Resources/deployments","properties":{"templateHash":"17768091452428862538","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Accepted","timestamp":"2021-04-06T09:22:56.3101372Z","duration":"PT2.23977S","correlationId":"b3998e8c-282a-402a-87d6-5c7865067085","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vm2NSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vm2PublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm2"}]}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_WPdbnL43R8eZZlGUgibyEVqTpCIIsfzK","name":"vm_deploy_WPdbnL43R8eZZlGUgibyEVqTpCIIsfzK","type":"Microsoft.Resources/deployments","properties":{"templateHash":"9734621614624225773","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Accepted","timestamp":"2021-04-07T02:06:30.2396802Z","duration":"PT2.4793794S","correlationId":"3bb07ddf-273f-4e2f-bd69-9e7fb50b6fc3","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vm2NSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vm2PublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm2"}]}}'
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_rD1qpMwiMgJQrWPW2USTSspzF9yAVlgC/operationStatuses/08585839059114072870?api-version=2020-10-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_WPdbnL43R8eZZlGUgibyEVqTpCIIsfzK/operationStatuses/08585838456977174656?api-version=2020-10-01
       cache-control:
       - no-cache
       content-length:
-      - '2442'
+      - '2443'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:22:57 GMT
+      - Wed, 07 Apr 2021 02:06:31 GMT
       expires:
       - '-1'
       pragma:
@@ -1634,7 +1607,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1198'
+      - '1199'
     status:
       code: 201
       message: Created
@@ -1655,7 +1628,7 @@ interactions:
       - python/3.7.9 (Windows-10-10.0.19041-SP0) msrest/0.6.21 msrest_azure/0.6.3
         azure-mgmt-resource/12.0.0 Azure-SDK-For-Python AZURECLI/2.21.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585839059114072870?api-version=2020-10-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585838456977174656?api-version=2020-10-01
   response:
     body:
       string: '{"status":"Running"}'
@@ -1667,7 +1640,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:23:27 GMT
+      - Wed, 07 Apr 2021 02:07:02 GMT
       expires:
       - '-1'
       pragma:
@@ -1698,7 +1671,7 @@ interactions:
       - python/3.7.9 (Windows-10-10.0.19041-SP0) msrest/0.6.21 msrest_azure/0.6.3
         azure-mgmt-resource/12.0.0 Azure-SDK-For-Python AZURECLI/2.21.0
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585839059114072870?api-version=2020-10-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment/operationStatuses/08585838456977174656?api-version=2020-10-01
   response:
     body:
       string: '{"status":"Succeeded"}'
@@ -1710,7 +1683,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:23:57 GMT
+      - Wed, 07 Apr 2021 02:07:32 GMT
       expires:
       - '-1'
       pragma:
@@ -1744,16 +1717,16 @@ interactions:
     uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/resourcegroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/mock-deployment?api-version=2020-10-01
   response:
     body:
-      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_rD1qpMwiMgJQrWPW2USTSspzF9yAVlgC","name":"vm_deploy_rD1qpMwiMgJQrWPW2USTSspzF9yAVlgC","type":"Microsoft.Resources/deployments","properties":{"templateHash":"17768091452428862538","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Succeeded","timestamp":"2021-04-06T09:23:41.2844547Z","duration":"PT47.2140875S","correlationId":"b3998e8c-282a-402a-87d6-5c7865067085","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vm2NSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vm2PublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm2"}],"outputs":{},"outputResources":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP"}]}}'
+      string: '{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Resources/deployments/vm_deploy_WPdbnL43R8eZZlGUgibyEVqTpCIIsfzK","name":"vm_deploy_WPdbnL43R8eZZlGUgibyEVqTpCIIsfzK","type":"Microsoft.Resources/deployments","properties":{"templateHash":"9734621614624225773","parameters":{"adminPassword":{"type":"SecureString"}},"mode":"Incremental","provisioningState":"Succeeded","timestamp":"2021-04-07T02:07:11.5415692Z","duration":"PT43.7812684S","correlationId":"3bb07ddf-273f-4e2f-bd69-9e7fb50b6fc3","providers":[{"namespace":"Microsoft.Network","resourceTypes":[{"resourceType":"networkSecurityGroups","locations":["westus"]},{"resourceType":"publicIPAddresses","locations":["westus"]},{"resourceType":"networkInterfaces","locations":["westus"]}]},{"namespace":"Microsoft.Compute","resourceTypes":[{"resourceType":"virtualMachines","locations":["westus"]}]}],"dependencies":[{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG","resourceType":"Microsoft.Network/networkSecurityGroups","resourceName":"vm2NSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP","resourceType":"Microsoft.Network/publicIPAddresses","resourceName":"vm2PublicIP"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"},{"dependsOn":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic","resourceType":"Microsoft.Network/networkInterfaces","resourceName":"vm2VMNic"}],"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2","resourceType":"Microsoft.Compute/virtualMachines","resourceName":"vm2"}],"outputs":{},"outputResources":[{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG"},{"id":"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP"}]}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '3305'
+      - '3304'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:23:58 GMT
+      - Wed, 07 Apr 2021 02:07:33 GMT
       expires:
       - '-1'
       pragma:
@@ -1788,16 +1761,16 @@ interactions:
     body:
       string: "{\r\n  \"name\": \"vm2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2\",\r\n
         \ \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"d2940243-c1e8-4f8b-8dfe-9af965d92126\",\r\n
+        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"8cf501b9-c677-4d74-b23a-50119eb3e8ba\",\r\n
         \   \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS1_v2\"\r\n    },\r\n
         \   \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\":
         \"Canonical\",\r\n        \"offer\": \"UbuntuServer\",\r\n        \"sku\":
         \"18.04-LTS\",\r\n        \"version\": \"latest\",\r\n        \"exactVersion\":
         \"18.04.202103250\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\":
-        \"Linux\",\r\n        \"name\": \"vm2_disk1_4e80c110f89d43dba83cca4a496fa37d\",\r\n
+        \"Linux\",\r\n        \"name\": \"vm2_disk1_5652d34a1d8549d6b9ba3a608d46665c\",\r\n
         \       \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n
         \       \"managedDisk\": {\r\n          \"storageAccountType\": \"Premium_LRS\",\r\n
-        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm2_disk1_4e80c110f89d43dba83cca4a496fa37d\"\r\n
+        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm2_disk1_5652d34a1d8549d6b9ba3a608d46665c\"\r\n
         \       },\r\n        \"diskSizeGB\": 30\r\n      },\r\n      \"dataDisks\":
         []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"vm2\",\r\n
         \     \"adminUsername\": \"azureuser\",\r\n      \"linuxConfiguration\": {\r\n
@@ -1812,15 +1785,15 @@ interactions:
         [\r\n          {\r\n            \"code\": \"ProvisioningState/succeeded\",\r\n
         \           \"level\": \"Info\",\r\n            \"displayStatus\": \"Ready\",\r\n
         \           \"message\": \"Guest Agent is running\",\r\n            \"time\":
-        \"2021-04-06T09:23:58+00:00\"\r\n          }\r\n        ],\r\n        \"extensionHandlers\":
-        []\r\n      },\r\n      \"disks\": [\r\n        {\r\n          \"name\": \"vm2_disk1_4e80c110f89d43dba83cca4a496fa37d\",\r\n
+        \"2021-04-07T02:07:24+00:00\"\r\n          }\r\n        ],\r\n        \"extensionHandlers\":
+        []\r\n      },\r\n      \"disks\": [\r\n        {\r\n          \"name\": \"vm2_disk1_5652d34a1d8549d6b9ba3a608d46665c\",\r\n
         \         \"statuses\": [\r\n            {\r\n              \"code\": \"ProvisioningState/succeeded\",\r\n
         \             \"level\": \"Info\",\r\n              \"displayStatus\": \"Provisioning
-        succeeded\",\r\n              \"time\": \"2021-04-06T09:23:27.7945589+00:00\"\r\n
+        succeeded\",\r\n              \"time\": \"2021-04-07T02:06:58.4682134+00:00\"\r\n
         \           }\r\n          ]\r\n        }\r\n      ],\r\n      \"hyperVGeneration\":
         \"V1\",\r\n      \"statuses\": [\r\n        {\r\n          \"code\": \"ProvisioningState/succeeded\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"Provisioning
-        succeeded\",\r\n          \"time\": \"2021-04-06T09:23:39.9670535+00:00\"\r\n
+        succeeded\",\r\n          \"time\": \"2021-04-07T02:07:09.921025+00:00\"\r\n
         \       },\r\n        {\r\n          \"code\": \"PowerState/running\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"VM running\"\r\n
         \       }\r\n      ]\r\n    }\r\n  }\r\n}"
@@ -1828,11 +1801,11 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '3253'
+      - '3252'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:23:59 GMT
+      - Wed, 07 Apr 2021 02:07:34 GMT
       expires:
       - '-1'
       pragma:
@@ -1849,7 +1822,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;3997,Microsoft.Compute/LowCostGet30Min;31985
+      - Microsoft.Compute/LowCostGet3Min;3997,Microsoft.Compute/LowCostGet30Min;31993
     status:
       code: 200
       message: OK
@@ -1873,12 +1846,12 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"vm2VMNic\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic\",\r\n
-        \ \"etag\": \"W/\\\"beda622d-3262-48b3-841b-15c8281b1a8c\\\"\",\r\n  \"location\":
+        \ \"etag\": \"W/\\\"ecaddaf3-d0d2-4fa4-926b-36d6bedbb42b\\\"\",\r\n  \"location\":
         \"westus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\",\r\n    \"resourceGuid\": \"fc925788-ca28-4168-8ee7-e698c839d952\",\r\n
+        \"Succeeded\",\r\n    \"resourceGuid\": \"158b7e56-7914-4d09-b687-47ef830a2b7b\",\r\n
         \   \"ipConfigurations\": [\r\n      {\r\n        \"name\": \"ipconfigvm2\",\r\n
         \       \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic/ipConfigurations/ipconfigvm2\",\r\n
-        \       \"etag\": \"W/\\\"beda622d-3262-48b3-841b-15c8281b1a8c\\\"\",\r\n
+        \       \"etag\": \"W/\\\"ecaddaf3-d0d2-4fa4-926b-36d6bedbb42b\\\"\",\r\n
         \       \"type\": \"Microsoft.Network/networkInterfaces/ipConfigurations\",\r\n
         \       \"properties\": {\r\n          \"provisioningState\": \"Succeeded\",\r\n
         \         \"privateIPAddress\": \"10.0.0.5\",\r\n          \"privateIPAllocationMethod\":
@@ -1887,8 +1860,8 @@ interactions:
         \         },\r\n          \"primary\": true,\r\n          \"privateIPAddressVersion\":
         \"IPv4\"\r\n        }\r\n      }\r\n    ],\r\n    \"dnsSettings\": {\r\n      \"dnsServers\":
         [],\r\n      \"appliedDnsServers\": [],\r\n      \"internalDomainNameSuffix\":
-        \"fakfujsdni0uphwis5sz5hac1c.dx.internal.cloudapp.net\"\r\n    },\r\n    \"macAddress\":
-        \"00-22-48-04-BA-48\",\r\n    \"enableAcceleratedNetworking\": false,\r\n
+        \"mlyb2emgch0u1bilklfa0uaewb.dx.internal.cloudapp.net\"\r\n    },\r\n    \"macAddress\":
+        \"00-0D-3A-5B-75-FF\",\r\n    \"enableAcceleratedNetworking\": false,\r\n
         \   \"enableIPForwarding\": false,\r\n    \"networkSecurityGroup\": {\r\n
         \     \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkSecurityGroups/vm2NSG\"\r\n
         \   },\r\n    \"primary\": true,\r\n    \"virtualMachine\": {\r\n      \"id\":
@@ -1902,9 +1875,9 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:24:00 GMT
+      - Wed, 07 Apr 2021 02:07:34 GMT
       etag:
-      - W/"beda622d-3262-48b3-841b-15c8281b1a8c"
+      - W/"ecaddaf3-d0d2-4fa4-926b-36d6bedbb42b"
       expires:
       - '-1'
       pragma:
@@ -1921,7 +1894,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - 82ca4097-cf05-44ac-9d1b-9e026b7c058d
+      - 19cef456-dddb-4f58-afec-ead3970b950c
     status:
       code: 200
       message: OK
@@ -1945,11 +1918,11 @@ interactions:
   response:
     body:
       string: "{\r\n  \"name\": \"vm2PublicIP\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/publicIPAddresses/vm2PublicIP\",\r\n
-        \ \"etag\": \"W/\\\"0537d6ac-f560-4233-987c-a274d4023a28\\\"\",\r\n  \"location\":
+        \ \"etag\": \"W/\\\"035f4b3d-09c8-4477-b666-a6b76a821f4d\\\"\",\r\n  \"location\":
         \"westus\",\r\n  \"tags\": {},\r\n  \"properties\": {\r\n    \"provisioningState\":
-        \"Succeeded\",\r\n    \"resourceGuid\": \"0af06c8e-6534-4c94-b291-4baa5b09f571\",\r\n
-        \   \"ipAddress\": \"138.91.153.123\",\r\n    \"publicIPAddressVersion\":
-        \"IPv4\",\r\n    \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\":
+        \"Succeeded\",\r\n    \"resourceGuid\": \"cec13ccd-2ed6-46a8-9389-1cca1211c1eb\",\r\n
+        \   \"ipAddress\": \"104.42.61.180\",\r\n    \"publicIPAddressVersion\": \"IPv4\",\r\n
+        \   \"publicIPAllocationMethod\": \"Dynamic\",\r\n    \"idleTimeoutInMinutes\":
         4,\r\n    \"ipTags\": [],\r\n    \"ipConfiguration\": {\r\n      \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Network/networkInterfaces/vm2VMNic/ipConfigurations/ipconfigvm2\"\r\n
         \   }\r\n  },\r\n  \"type\": \"Microsoft.Network/publicIPAddresses\",\r\n
         \ \"sku\": {\r\n    \"name\": \"Basic\"\r\n  }\r\n}"
@@ -1957,13 +1930,13 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '998'
+      - '997'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:24:00 GMT
+      - Wed, 07 Apr 2021 02:07:35 GMT
       etag:
-      - W/"0537d6ac-f560-4233-987c-a274d4023a28"
+      - W/"035f4b3d-09c8-4477-b666-a6b76a821f4d"
       expires:
       - '-1'
       pragma:
@@ -1980,7 +1953,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-arm-service-request-id:
-      - d63cefaa-8edf-4275-ac34-c3f1b1a4137e
+      - 8ef45310-b6ba-4285-9fc0-412b0f5aac73
     status:
       code: 200
       message: OK
@@ -2005,16 +1978,16 @@ interactions:
     body:
       string: "{\r\n  \"name\": \"vm2\",\r\n  \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/virtualMachines/vm2\",\r\n
         \ \"type\": \"Microsoft.Compute/virtualMachines\",\r\n  \"location\": \"westus\",\r\n
-        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"d2940243-c1e8-4f8b-8dfe-9af965d92126\",\r\n
+        \ \"tags\": {},\r\n  \"properties\": {\r\n    \"vmId\": \"8cf501b9-c677-4d74-b23a-50119eb3e8ba\",\r\n
         \   \"hardwareProfile\": {\r\n      \"vmSize\": \"Standard_DS1_v2\"\r\n    },\r\n
         \   \"storageProfile\": {\r\n      \"imageReference\": {\r\n        \"publisher\":
         \"Canonical\",\r\n        \"offer\": \"UbuntuServer\",\r\n        \"sku\":
         \"18.04-LTS\",\r\n        \"version\": \"latest\",\r\n        \"exactVersion\":
         \"18.04.202103250\"\r\n      },\r\n      \"osDisk\": {\r\n        \"osType\":
-        \"Linux\",\r\n        \"name\": \"vm2_disk1_4e80c110f89d43dba83cca4a496fa37d\",\r\n
+        \"Linux\",\r\n        \"name\": \"vm2_disk1_5652d34a1d8549d6b9ba3a608d46665c\",\r\n
         \       \"createOption\": \"FromImage\",\r\n        \"caching\": \"ReadWrite\",\r\n
         \       \"managedDisk\": {\r\n          \"storageAccountType\": \"Premium_LRS\",\r\n
-        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm2_disk1_4e80c110f89d43dba83cca4a496fa37d\"\r\n
+        \         \"id\": \"/subscriptions/00000000-0000-0000-0000-000000000000/resourceGroups/cli_test_vm_install_patches_000001/providers/Microsoft.Compute/disks/vm2_disk1_5652d34a1d8549d6b9ba3a608d46665c\"\r\n
         \       },\r\n        \"diskSizeGB\": 30\r\n      },\r\n      \"dataDisks\":
         []\r\n    },\r\n    \"osProfile\": {\r\n      \"computerName\": \"vm2\",\r\n
         \     \"adminUsername\": \"azureuser\",\r\n      \"linuxConfiguration\": {\r\n
@@ -2029,15 +2002,15 @@ interactions:
         [\r\n          {\r\n            \"code\": \"ProvisioningState/succeeded\",\r\n
         \           \"level\": \"Info\",\r\n            \"displayStatus\": \"Ready\",\r\n
         \           \"message\": \"Guest Agent is running\",\r\n            \"time\":
-        \"2021-04-06T09:23:58+00:00\"\r\n          }\r\n        ],\r\n        \"extensionHandlers\":
-        []\r\n      },\r\n      \"disks\": [\r\n        {\r\n          \"name\": \"vm2_disk1_4e80c110f89d43dba83cca4a496fa37d\",\r\n
+        \"2021-04-07T02:07:24+00:00\"\r\n          }\r\n        ],\r\n        \"extensionHandlers\":
+        []\r\n      },\r\n      \"disks\": [\r\n        {\r\n          \"name\": \"vm2_disk1_5652d34a1d8549d6b9ba3a608d46665c\",\r\n
         \         \"statuses\": [\r\n            {\r\n              \"code\": \"ProvisioningState/succeeded\",\r\n
         \             \"level\": \"Info\",\r\n              \"displayStatus\": \"Provisioning
-        succeeded\",\r\n              \"time\": \"2021-04-06T09:23:27.7945589+00:00\"\r\n
+        succeeded\",\r\n              \"time\": \"2021-04-07T02:06:58.4682134+00:00\"\r\n
         \           }\r\n          ]\r\n        }\r\n      ],\r\n      \"hyperVGeneration\":
         \"V1\",\r\n      \"statuses\": [\r\n        {\r\n          \"code\": \"ProvisioningState/succeeded\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"Provisioning
-        succeeded\",\r\n          \"time\": \"2021-04-06T09:23:39.9670535+00:00\"\r\n
+        succeeded\",\r\n          \"time\": \"2021-04-07T02:07:09.921025+00:00\"\r\n
         \       },\r\n        {\r\n          \"code\": \"PowerState/running\",\r\n
         \         \"level\": \"Info\",\r\n          \"displayStatus\": \"VM running\"\r\n
         \       }\r\n      ]\r\n    }\r\n  }\r\n}"
@@ -2045,11 +2018,11 @@ interactions:
       cache-control:
       - no-cache
       content-length:
-      - '3253'
+      - '3252'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:24:01 GMT
+      - Wed, 07 Apr 2021 02:07:36 GMT
       expires:
       - '-1'
       pragma:
@@ -2066,7 +2039,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/LowCostGet3Min;3996,Microsoft.Compute/LowCostGet30Min;31984
+      - Microsoft.Compute/LowCostGet3Min;3996,Microsoft.Compute/LowCostGet30Min;31992
     status:
       code: 200
       message: OK
@@ -2097,17 +2070,17 @@ interactions:
       string: ''
     headers:
       azure-asyncoperation:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?api-version=2020-12-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
       cache-control:
       - no-cache
       content-length:
       - '0'
       date:
-      - Tue, 06 Apr 2021 09:24:02 GMT
+      - Wed, 07 Apr 2021 02:07:37 GMT
       expires:
       - '-1'
       location:
-      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?monitor=true&api-version=2020-12-01
+      - https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?monitor=true&api-version=2020-12-01
       pragma:
       - no-cache
       server:
@@ -2120,7 +2093,7 @@ interactions:
       x-ms-ratelimit-remaining-resource:
       - Microsoft.Compute/PatchOperation3Min;189,Microsoft.Compute/PatchOperation30Min;598
       x-ms-ratelimit-remaining-subscription-writes:
-      - '1199'
+      - '1197'
     status:
       code: 202
       message: Accepted
@@ -2140,11 +2113,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:24:02.0148453+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"d1d51719-1e52-4e58-86c6-8b69c2562a01\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -2153,7 +2126,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:24:32 GMT
+      - Wed, 07 Apr 2021 02:08:07 GMT
       expires:
       - '-1'
       pragma:
@@ -2170,7 +2143,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14989,Microsoft.Compute/GetOperation30Min;29960
+      - Microsoft.Compute/GetOperation3Min;14990,Microsoft.Compute/GetOperation30Min;29965
     status:
       code: 200
       message: OK
@@ -2190,11 +2163,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:24:02.0148453+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"d1d51719-1e52-4e58-86c6-8b69c2562a01\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -2203,7 +2176,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:25:03 GMT
+      - Wed, 07 Apr 2021 02:08:37 GMT
       expires:
       - '-1'
       pragma:
@@ -2220,7 +2193,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14989,Microsoft.Compute/GetOperation30Min;29957
+      - Microsoft.Compute/GetOperation3Min;14990,Microsoft.Compute/GetOperation30Min;29962
     status:
       code: 200
       message: OK
@@ -2240,11 +2213,11 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:24:02.0148453+00:00\",\r\n  \"status\":
-        \"InProgress\",\r\n  \"name\": \"d1d51719-1e52-4e58-86c6-8b69c2562a01\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
     headers:
       cache-control:
       - no-cache
@@ -2253,7 +2226,7 @@ interactions:
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:25:33 GMT
+      - Wed, 07 Apr 2021 02:09:08 GMT
       expires:
       - '-1'
       pragma:
@@ -2270,7 +2243,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14990,Microsoft.Compute/GetOperation30Min;29954
+      - Microsoft.Compute/GetOperation3Min;14990,Microsoft.Compute/GetOperation30Min;29959
     status:
       code: 200
       message: OK
@@ -2290,22 +2263,20 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
   response:
     body:
-      string: "{\r\n  \"startTime\": \"2021-04-06T09:24:02.0148453+00:00\",\r\n  \"endTime\":
-        \"2021-04-06T09:25:54.332901+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
-        \ \"properties\": {\r\n    \"output\": {\"status\":\"Succeeded\",\"installationActivityId\":\"d1d51719-1e52-4e58-86c6-8b69c2562a01\",\"rebootStatus\":\"NotNeeded\",\"maintenanceWindowExceeded\":false,\"excludedPatchCount\":0,\"notSelectedPatchCount\":1,\"pendingPatchCount\":0,\"installedPatchCount\":3,\"failedPatchCount\":0,\"patches\":[{\"patchId\":\"ubuntu-keyring_2018.09.18.1~18.04.2_Ubuntu_18.04\",\"name\":\"ubuntu-keyring\",\"version\":\"2018.09.18.1~18.04.2\",\"classifications\":[\"Other\"],\"installationState\":\"NotSelected\"},{\"patchId\":\"curl_7.58.0-2ubuntu3.13_Ubuntu_18.04\",\"name\":\"curl\",\"version\":\"7.58.0-2ubuntu3.13\",\"classifications\":[\"Security\"],\"installationState\":\"Installed\"},{\"patchId\":\"libcurl4_7.58.0-2ubuntu3.13_Ubuntu_18.04\",\"name\":\"libcurl4\",\"version\":\"7.58.0-2ubuntu3.13\",\"classifications\":[\"Security\"],\"installationState\":\"Installed\"},{\"patchId\":\"libcurl3-gnutls_7.58.0-2ubuntu3.13_Ubuntu_18.04\",\"name\":\"libcurl3-gnutls\",\"version\":\"7.58.0-2ubuntu3.13\",\"classifications\":[\"Security\"],\"installationState\":\"Installed\"}],\"startDateTime\":\"2021-04-06T09:24:03.0461392+00:00\",\"error\":{\"details\":[],\"code\":\"0\",\"message\":\"0
-        error/s reported.\"}}\r\n  },\r\n  \"name\": \"d1d51719-1e52-4e58-86c6-8b69c2562a01\"\r\n}"
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1306'
+      - '134'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:26:03 GMT
+      - Wed, 07 Apr 2021 02:09:38 GMT
       expires:
       - '-1'
       pragma:
@@ -2322,7 +2293,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14987,Microsoft.Compute/GetOperation30Min;29951
+      - Microsoft.Compute/GetOperation3Min;14987,Microsoft.Compute/GetOperation30Min;29956
     status:
       code: 200
       message: OK
@@ -2342,20 +2313,193 @@ interactions:
       User-Agent:
       - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
     method: GET
-    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/d1d51719-1e52-4e58-86c6-8b69c2562a01?monitor=true&api-version=2020-12-01
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
   response:
     body:
-      string: '{"status":"Succeeded","installationActivityId":"d1d51719-1e52-4e58-86c6-8b69c2562a01","rebootStatus":"NotNeeded","maintenanceWindowExceeded":false,"excludedPatchCount":0,"notSelectedPatchCount":1,"pendingPatchCount":0,"installedPatchCount":3,"failedPatchCount":0,"patches":[{"patchId":"ubuntu-keyring_2018.09.18.1~18.04.2_Ubuntu_18.04","name":"ubuntu-keyring","version":"2018.09.18.1~18.04.2","classifications":["Other"],"installationState":"NotSelected"},{"patchId":"curl_7.58.0-2ubuntu3.13_Ubuntu_18.04","name":"curl","version":"7.58.0-2ubuntu3.13","classifications":["Security"],"installationState":"Installed"},{"patchId":"libcurl4_7.58.0-2ubuntu3.13_Ubuntu_18.04","name":"libcurl4","version":"7.58.0-2ubuntu3.13","classifications":["Security"],"installationState":"Installed"},{"patchId":"libcurl3-gnutls_7.58.0-2ubuntu3.13_Ubuntu_18.04","name":"libcurl3-gnutls","version":"7.58.0-2ubuntu3.13","classifications":["Security"],"installationState":"Installed"}],"startDateTime":"2021-04-06T09:24:03.0461392+00:00","error":{"details":[],"code":"0","message":"0
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '134'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 07 Apr 2021 02:10:09 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-resource:
+      - Microsoft.Compute/GetOperation3Min;14986,Microsoft.Compute/GetOperation30Min;29953
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vm install-patches
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --maximum-duration --reboot-setting --cfs-include --reboot
+      User-Agent:
+      - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
+  response:
+    body:
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"status\":
+        \"InProgress\",\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '134'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 07 Apr 2021 02:10:39 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-resource:
+      - Microsoft.Compute/GetOperation3Min;14985,Microsoft.Compute/GetOperation30Min;29951
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vm install-patches
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --maximum-duration --reboot-setting --cfs-include --reboot
+      User-Agent:
+      - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?api-version=2020-12-01
+  response:
+    body:
+      string: "{\r\n  \"startTime\": \"2021-04-07T02:07:36.7984713+00:00\",\r\n  \"endTime\":
+        \"2021-04-07T02:11:07.8240199+00:00\",\r\n  \"status\": \"Succeeded\",\r\n
+        \ \"properties\": {\r\n    \"output\": {\r\n  \"status\": \"Succeeded\",\r\n
+        \ \"installationActivityId\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\",\r\n
+        \ \"rebootStatus\": \"NotNeeded\",\r\n  \"maintenanceWindowExceeded\": false,\r\n
+        \ \"excludedPatchCount\": 0,\r\n  \"notSelectedPatchCount\": 2,\r\n  \"pendingPatchCount\":
+        0,\r\n  \"installedPatchCount\": 3,\r\n  \"failedPatchCount\": 0,\r\n  \"patches\":
+        [\r\n    {\r\n      \"patchId\": \"ubuntu-keyring_2018.09.18.1~18.04.2_Ubuntu_18.04\",\r\n
+        \     \"name\": \"ubuntu-keyring\",\r\n      \"version\": \"2018.09.18.1~18.04.2\",\r\n
+        \     \"classifications\": [\r\n        \"Other\"\r\n      ],\r\n      \"installationState\":
+        \"NotSelected\"\r\n    },\r\n    {\r\n      \"patchId\": \"sbsigntool_0.9.2-2ubuntu1~18.04.1_Ubuntu_18.04\",\r\n
+        \     \"name\": \"sbsigntool\",\r\n      \"version\": \"0.9.2-2ubuntu1~18.04.1\",\r\n
+        \     \"classifications\": [\r\n        \"Other\"\r\n      ],\r\n      \"installationState\":
+        \"NotSelected\"\r\n    },\r\n    {\r\n      \"patchId\": \"curl_7.58.0-2ubuntu3.13_Ubuntu_18.04\",\r\n
+        \     \"name\": \"curl\",\r\n      \"version\": \"7.58.0-2ubuntu3.13\",\r\n
+        \     \"classifications\": [\r\n        \"Security\"\r\n      ],\r\n      \"installationState\":
+        \"Installed\"\r\n    },\r\n    {\r\n      \"patchId\": \"libcurl4_7.58.0-2ubuntu3.13_Ubuntu_18.04\",\r\n
+        \     \"name\": \"libcurl4\",\r\n      \"version\": \"7.58.0-2ubuntu3.13\",\r\n
+        \     \"classifications\": [\r\n        \"Security\"\r\n      ],\r\n      \"installationState\":
+        \"Installed\"\r\n    },\r\n    {\r\n      \"patchId\": \"libcurl3-gnutls_7.58.0-2ubuntu3.13_Ubuntu_18.04\",\r\n
+        \     \"name\": \"libcurl3-gnutls\",\r\n      \"version\": \"7.58.0-2ubuntu3.13\",\r\n
+        \     \"classifications\": [\r\n        \"Security\"\r\n      ],\r\n      \"installationState\":
+        \"Installed\"\r\n    }\r\n  ],\r\n  \"startDateTime\": \"2021-04-07T02:07:37.8297871+00:00\",\r\n
+        \ \"error\": {\r\n    \"details\": [],\r\n    \"code\": \"0\",\r\n    \"message\":
+        \"0 error/s reported.\"\r\n  }\r\n}\r\n  },\r\n  \"name\": \"3a7f3923-0048-4f6c-bd39-fb84a73a80a0\"\r\n}"
+    headers:
+      cache-control:
+      - no-cache
+      content-length:
+      - '1951'
+      content-type:
+      - application/json; charset=utf-8
+      date:
+      - Wed, 07 Apr 2021 02:11:09 GMT
+      expires:
+      - '-1'
+      pragma:
+      - no-cache
+      server:
+      - Microsoft-HTTPAPI/2.0
+      - Microsoft-HTTPAPI/2.0
+      strict-transport-security:
+      - max-age=31536000; includeSubDomains
+      transfer-encoding:
+      - chunked
+      vary:
+      - Accept-Encoding
+      x-content-type-options:
+      - nosniff
+      x-ms-ratelimit-remaining-resource:
+      - Microsoft.Compute/GetOperation3Min;14985,Microsoft.Compute/GetOperation30Min;29948
+    status:
+      code: 200
+      message: OK
+- request:
+    body: null
+    headers:
+      Accept:
+      - '*/*'
+      Accept-Encoding:
+      - gzip, deflate
+      CommandName:
+      - vm install-patches
+      Connection:
+      - keep-alive
+      ParameterSetName:
+      - -g -n --maximum-duration --reboot-setting --cfs-include --reboot
+      User-Agent:
+      - AZURECLI/2.21.0 azsdk-python-azure-mgmt-compute/19.0.0 Python/3.7.9 (Windows-10-10.0.19041-SP0)
+    method: GET
+    uri: https://management.azure.com/subscriptions/00000000-0000-0000-0000-000000000000/providers/Microsoft.Compute/locations/westus/operations/3a7f3923-0048-4f6c-bd39-fb84a73a80a0?monitor=true&api-version=2020-12-01
+  response:
+    body:
+      string: '{"status":"Succeeded","installationActivityId":"3a7f3923-0048-4f6c-bd39-fb84a73a80a0","rebootStatus":"NotNeeded","maintenanceWindowExceeded":false,"excludedPatchCount":0,"notSelectedPatchCount":2,"pendingPatchCount":0,"installedPatchCount":3,"failedPatchCount":0,"patches":[{"patchId":"ubuntu-keyring_2018.09.18.1~18.04.2_Ubuntu_18.04","name":"ubuntu-keyring","version":"2018.09.18.1~18.04.2","classifications":["Other"],"installationState":"NotSelected"},{"patchId":"sbsigntool_0.9.2-2ubuntu1~18.04.1_Ubuntu_18.04","name":"sbsigntool","version":"0.9.2-2ubuntu1~18.04.1","classifications":["Other"],"installationState":"NotSelected"},{"patchId":"curl_7.58.0-2ubuntu3.13_Ubuntu_18.04","name":"curl","version":"7.58.0-2ubuntu3.13","classifications":["Security"],"installationState":"Installed"},{"patchId":"libcurl4_7.58.0-2ubuntu3.13_Ubuntu_18.04","name":"libcurl4","version":"7.58.0-2ubuntu3.13","classifications":["Security"],"installationState":"Installed"},{"patchId":"libcurl3-gnutls_7.58.0-2ubuntu3.13_Ubuntu_18.04","name":"libcurl3-gnutls","version":"7.58.0-2ubuntu3.13","classifications":["Security"],"installationState":"Installed"}],"startDateTime":"2021-04-07T02:07:37.8297871+00:00","error":{"details":[],"code":"0","message":"0
         error/s reported."}}'
     headers:
       cache-control:
       - no-cache
       content-length:
-      - '1082'
+      - '1260'
       content-type:
       - application/json; charset=utf-8
       date:
-      - Tue, 06 Apr 2021 09:26:03 GMT
+      - Wed, 07 Apr 2021 02:11:10 GMT
       expires:
       - '-1'
       pragma:
@@ -2372,7 +2516,7 @@ interactions:
       x-content-type-options:
       - nosniff
       x-ms-ratelimit-remaining-resource:
-      - Microsoft.Compute/GetOperation3Min;14986,Microsoft.Compute/GetOperation30Min;29950
+      - Microsoft.Compute/GetOperation3Min;14984,Microsoft.Compute/GetOperation30Min;29947
     status:
       code: 200
       message: OK

@@ -3736,23 +3736,25 @@ def install_vm_patches(cmd, resource_group_name, vm_name, maximum_duration, rebo
     vm = ccf.virtual_machines.get(resource_group_name, vm_name)
     if not vm:
         raise ValidationError("Can't get the VM named {} in resource group {}".format(vm_name, resource_group_name))
-    osType = vm.storage_profile.os_disk.os_type.lower()
+    osType, windows_parameters, linux_parameters = None, None, None
+    if vm.storage_profile and vm.storage_profile.os_disk and vm.storage_profile.os_disk.os_type:
+        osType = vm.storage_profile.os_disk.os_type.lower()
     if osType == 'windows':
         if classifications_to_include:
             for cti in classifications_to_include:
                 if cti not in [x.value for x in VMGuestPatchClassificationWindows]:
                     raise ValidationError('classifications_to_include value for Windows VM should be Critical/Security/UpdateRollUp/FeaturePack/ServicePack/Definition/Tools/Updates')
         windows_parameters = WindowsParameters(classifications_to_include=classifications_to_include, kb_numbers_to_inclunde=kb_numbers_to_include, kb_numbers_to_exclude=kb_numbers_to_exclude, exclude_kbs_requirig_reboot=exclude_kbs_requiring_reboot)
-        install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, windows_parameters=windows_parameters)
     elif osType == 'linux':
         if classifications_to_include:
             for cti in classifications_to_include:
                 if cti not in [x.value for x in VMGuestPatchClassificationLinux]:
                     raise ValidationError('classifications_to_include value for Windows VM should be Critical/Security/Other')
         linux_parameters = LinuxParameters(classifications_to_include=classifications_to_include, package_name_masks_to_include=package_name_masks_to_include, package_name_masks_to_exclude=package_name_masks_to_exclude)
-        install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, linux_parameters=linux_parameters)
     else:
-        raise AzureInternalError('osType {} of the vm is not allowed'.format(osType))
+        windows_parameters = WindowsParameters(classifications_to_include=classifications_to_include, kb_numbers_to_inclunde=kb_numbers_to_include, kb_numbers_to_exclude=kb_numbers_to_exclude, exclude_kbs_requirig_reboot=exclude_kbs_requiring_reboot)
+        linux_parameters = LinuxParameters(classifications_to_include=classifications_to_include, package_name_masks_to_include=package_name_masks_to_include, package_name_masks_to_exclude=package_name_masks_to_exclude)
+    install_patches_input = VMInstallPatchesParameters(maximum_duration=maximum_duration, reboot_setting=reboot_setting, linux_parameters=linux_parameters, windows_parameters=windows_parameters)
 
     return sdk_no_wait(no_wait, ccf.virtual_machines.begin_install_patches, resource_group_name=resource_group_name, vm_name=vm_name, install_patches_input=install_patches_input)
 
