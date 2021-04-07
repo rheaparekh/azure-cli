@@ -5077,12 +5077,12 @@ class VMInstallPatchesScenarioTest(ScenarioTest):
     def test_vm_install_patches(self, resource_group):
         # Create new one
         self.cmd('vm create -g {rg} -n vm --image Win2019Datacenter --enable-hotpatching true --admin-username azureuser --admin-password testPassword0 --nsg-rule NONE')
-        self.cmd('vm install-patches -g {rg} -n vm --maximum-duration PT4H --reboot-setting IfRequired --cfs-include Critical Security --reboot true', checks=[
+        self.cmd('vm install-patches -g {rg} -n vm --maximum-duration PT4H --reboot-setting IfRequired --classifications-to-include Critical Security --exclude-kbs-requiring-reboot true', checks=[
             self.check('status', 'Succeeded')
         ])
 
         self.cmd('vm create -g {rg} -n vm2 --image UbuntuLTS --enable-hotpatching true --admin-username azureuser --admin-password testPassword0 --nsg-rule NONE')
-        self.cmd('vm install-patches -g {rg} -n vm2 --maximum-duration PT4H --reboot-setting IfRequired --cfs-include Critical Security --reboot true', checks=[
+        self.cmd('vm install-patches -g {rg} -n vm2 --maximum-duration PT4H --reboot-setting IfRequired --classifications-to-include Critical Security', checks=[
             self.check('status', 'Succeeded')
         ])
 
