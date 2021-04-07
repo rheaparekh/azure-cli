@@ -260,7 +260,7 @@ def load_command_table(self, _):
         g.generic_update_command('update', custom_func_name='update_snapshot', setter_name='begin_create_or_update', setter_arg_name='snapshot', supports_no_wait=True)
         g.wait_command('wait')
 
-    with self.command_group('vm', compute_vm_sdk) as g:
+    with self.command_group('vm', compute_vm_sdk, client_factory=cf_vm) as g:
         g.custom_command('identity assign', 'assign_vm_identity', validator=process_assign_identity_namespace)
         g.custom_command('identity remove', 'remove_vm_identity', validator=process_remove_identity_namespace, min_api='2017-12-01')
         g.custom_show_command('identity show', 'show_vm_identity')
@@ -274,9 +274,7 @@ def load_command_table(self, _):
         g.custom_command('get-instance-view', 'get_instance_view', table_transformer='{Name:name, ResourceGroup:resourceGroup, Location:location, ProvisioningState:provisioningState, PowerState:instanceView.statuses[1].displayStatus}')
         g.custom_command('list', 'list_vm', table_transformer=transform_vm_list)
         g.custom_command('list-ip-addresses', 'list_vm_ip_addresses', table_transformer=transform_ip_addresses)
-        g.command('list-sizes', 'list', command_type=compute_vm_size_sdk)
         g.custom_command('list-skus', 'list_skus', table_transformer=transform_sku_for_table_output, min_api='2017-03-30')
-        g.command('list-usage', 'list', command_type=compute_vm_usage_sdk, transform=transform_vm_usage_list, table_transformer='[].{Name:localName, CurrentValue:currentValue, Limit:limit}')
         g.command('list-vm-resize-options', 'list_available_sizes')
         g.custom_command('open-port', 'open_vm_port')
         g.command('perform-maintenance', 'begin_perform_maintenance', min_api='2017-03-30')
@@ -293,6 +291,10 @@ def load_command_table(self, _):
         g.custom_command('auto-shutdown', 'auto_shutdown_vm')
         g.command('assess-patches', 'begin_assess_patches', min_api='2020-06-01')
         g.custom_command('install-patches', 'install_vm_patches', supports_no_wait=True, min_api='2020-12-01')
+
+    with self.command_group('vm', compute_vm_sdk) as g:
+        g.command('list-sizes', 'list', command_type=compute_vm_size_sdk)
+        g.command('list-usage', 'list', command_type=compute_vm_usage_sdk, transform=transform_vm_usage_list, table_transformer='[].{Name:localName, CurrentValue:currentValue, Limit:limit}')
 
     with self.command_group('vm availability-set', compute_availset_sdk) as g:
         g.custom_command('convert', 'convert_av_set_to_managed_disk', min_api='2016-04-30-preview')
